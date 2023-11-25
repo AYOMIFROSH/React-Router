@@ -6,10 +6,10 @@ function MovieDetails({ movies }) {
     const movie = movies.find(m => m.title === title);
     return (
         <div>
-            <h2>{movie.title}</h2>
-            <p>{movie.description}</p>
+            <h2 style={{display: 'flex', justifyContent: "center", padding: "10px", color: "green"}}><cite>{movie.title}</cite></h2>
+            <p style={{padding: "10px"}}>{movie.description}</p>
             <iframe width="560" height="315" src={movie.trailerLink.replace('watch?v=', 'embed/')} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <Link to="/">Back to Home</Link>
+            <button className='Btn'><Link to="/">Home</Link></button>
         </div>
     );
 }
