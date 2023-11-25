@@ -8,7 +8,7 @@ const Navbars = () => {
                 <img className="logo" src= {Logo} alt="logo"/>
                     <nav>
                         <ul className="navbar">
-                            <li><a href="/Page.html">About Us</a> </li>
+                            <li><a href="/">About Us</a> </li>
                             <li><a href="#">Career</a> </li>
                             <li><a href="#">Departments</a> </li>
                             <li><a href="./sign">sign in</a></li>
